@@ -7,13 +7,15 @@ import { Option } from "@/components/option";
 import { Link } from "@/components/link";
 import { Categories } from "@/components/categories";
 
+import { router } from "expo-router";
+
 export default function Index() {
   return (
 <View style={styles.container}>
   <View style={styles.header}>
     <Image source={require("@/assets/logo.png")} style={styles.logo}/>
     
-    <TouchableOpacity activeOpacity={0.3}>
+    <TouchableOpacity  onPress={() => router.navigate("/add")}>
     <MaterialIcons name="add" size={32} color={colors.green[300]} /> 
     </TouchableOpacity>
   </View>
@@ -34,7 +36,7 @@ export default function Index() {
     contentContainerStyle={styles.linksContent}
     showsVerticalScrollIndicator={false}
   />
-<Modal transparent visible={true}>
+<Modal transparent visible={false}>
   <View style={styles.modal}>
     <View style={styles.modalContent}>
       <View style={styles.modalHeader}>

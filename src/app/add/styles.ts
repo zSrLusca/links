@@ -15,12 +15,16 @@ export const styles = StyleSheet.create({
     },
     title:{
         color: colors.gray[200],
-        fontSize:24,
+        fontSize:18,
         fontWeight:"600",
     },
     label:{
         color:colors.gray[400],
         fontSize:14,
         paddingHorizontal:24,
+    },
+    form:{
+        padding:24,
+        gap: 16,
     },
 })
