@@ -20,7 +20,7 @@ export default function Add(){
             <Text style={styles.label}>Selecione uma categoria</Text>
             <Categories/>
             <View style={styles.form}>
-            <Input placeholder="nome"/>
+            <Input placeholder="nome" onChangeText={console.log}/>
             <Input placeholder="Url"/>
             <Button title="Adicionar"/>
             </View>
